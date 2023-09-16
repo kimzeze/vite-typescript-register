@@ -89,4 +89,12 @@ module.exports = {
       typescript: './tsconfig.json',
     },
   },
+  // React를 첫줄에 import 하지 않아도 오류로 인식하지 않도록 룰 추가
+  'react/react-in-jsx-scope': 'off',
+  'prettier/prettier': [
+    'error',
+    {
+      endOfLine: 'auto',
+    },
+  ],
 }
