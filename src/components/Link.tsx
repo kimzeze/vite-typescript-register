@@ -4,16 +4,16 @@ import { ReactNode } from 'react'
 interface LinkProps {
   path: string
   children?: ReactNode
-  // className?: string
+  className?: string
   onClick?: () => void
 }
 
-const Link = ({ path, children, onClick }: LinkProps) => {
+const Link = ({ className, path, children, onClick }: LinkProps) => {
   return (
     <ReactRouterLink
       to={path}
       onClick={onClick}
-      className="text-3xl font-bold underline"
+      className={`text-3xl font-bold ${className}`}
     >
       {children}
     </ReactRouterLink>
