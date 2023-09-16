@@ -2,7 +2,7 @@ import { Link } from '@/components'
 const Home = () => {
   return (
     <div>
-      <h1>Hello, Home Page</h1>
+      <h1 className="text-9xl">kimdohyeon</h1>
       <Link
         onClick={() => console.log('회원가입 링크 눌렀어요')}
         path="/Register"
