@@ -8,7 +8,10 @@
     /* src 절대 경로 설정 */
     "baseUrl": ".",
     "paths": {
-      "@src/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@components/*": ["src/components/*"],
+      "@containers/*": ["src/containers/*"],
+      "@pages/*": ["src/pages/*"]
     },
 
     /* Bundler mode */
